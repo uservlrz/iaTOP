@@ -27,7 +27,7 @@ def decodifica_chave_api():
     chave_api_decodificada = cipher_suite.decrypt(CHAVE_API_CRIPTOGRAFADA).decode()
     return chave_api_decodificada
 
-def retorna_resposta_modelo(mensagens, modelo='gpt-4-model-identifier', temperatura=0):
+def retorna_resposta_modelo(mensagens, modelo='gpt-4-turbo-preview', temperatura=0):
     openai.api_key = decodifica_chave_api() 
     chat_messages = [{"role": m['role'], "content": m['content']} for m in mensagens]
 
