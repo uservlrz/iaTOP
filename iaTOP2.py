@@ -145,7 +145,7 @@ def apagar_conversa(nome_arquivo):
 def pagina_principal():
     
     st.markdown("""
-    <h1 style='text-align: left; margin-bottom: 20px;'>Chat GP<span style='color: #10B0A0; font-size: 60px;'>TOP</span></h1>
+    <h1 style='text-align: left; margin-bottom: 20px;'>IA <span style='font-size: 60px;'>TOP</span></h1>
     """, unsafe_allow_html=True)
     
     with st.container():
